@@ -1,0 +1,50 @@
+﻿<<<<<<< DESCRIÇÃO DOS REGISTROS DE DADOS >>>>>>
+
+1. Formatação dos Arquivos
+
+Os arquivos de dados estão disponíveis no formato "CSV", com ponto e vírgula (;) como separador de campo, e ponto (.) como separador decimal.
+Os dados de Cota estão em centímetros (cm), Vazão em metros cúbicos por segundo (m3/s) e Chuva em milímetros (mm).
+ 
+-------------------------------------------------------
+1. Descrição dos registros de COTA
+
+CAMPO;VALOR;DESCRIÇÃO
+EstacaoCodigo;1 a 99999999;Código da estação onde foram realizadas as medições
+NivelConsistencia;1 = Bruto, 2 = Consistido;Indica o nível de consistência do registro
+MediaDiaria;1 = Média Diária;Indica se o registro se refere a média diária
+Data;MMM/YY;Mês/ano em que foram realizadas as medições
+TipoMedicaoCotas;1 = Escala, 2 = linígrafo, 3 = Datalogger, 4 = SMS Cota;Método utilizado para obtenção dos dados de cota
+Maxima;;Valor máximo da cota observada no mês
+Minima;;Valor mínimo da cota observada no mês
+Media;;Valor médio mensal de cota
+DiaMaxima;;Dia do mês em que ocorreu a cota máxima
+DiaMinima;;Dia do mês em que ocorreu a cota mínima
+MaximaStatus;;Indica o status do valor da cota máxima
+MinimaStatus;;Indica o status do valor da cota mínima
+MediaStatus;;Indica o status do valor da cota média
+MediaAnual;;Valor médio anual de cota
+MediaAnualStatus;;Indica o status do valor da cota média anual
+Cota01...Cota31;;Valor de cota para cada dia do mês
+Cota01Status...Cota31Status;0 = Branco, 1 = Normal, 2 = Estimado, 3 = Duvidoso, 4 = Régua Seca, 5 = Rio Cortado, 6 = Rio Seco, 7 = Régua Coberta;Indica o status dos valores de cota para os respectivos dias do mês
+
+---------------------------------------------------------
+2. Descrição dos registros de VAZÃO
+
+CAMPO;VALOR;DESCRIÇÃO
+EstacaoCodigo;1 a 99999999;Código da estação onde foram realizadas as medições
+NivelConsistencia;1 = Bruto, 2 = Consistido;Indica o nível de consistência do registro
+Data;MMM/YY;Mês/ano em que foram realizadas as medições
+MediaDiaria;1 = Média Diária;Indica se o registro se refere a média diária
+MetodoObtencaoVazoes;1 = Curva Descarga, 2 = Transferência de vazões, 3 = Soma de vazões, 4 = ADCP;Método utilizado para obtenção dos dados de vazão
+Maxima;;Valor máximo de vazão observada no mês
+Minima;;Valor mínimo de vazão observada no mês
+Media;;Valor médio mensal de vazão
+DiaMaxima;;Dia do mês em que ocorreu a vazão máxima
+DiaMinima;;Dia do mês em que ocorreu a vazão mínima
+MaximaStatus;;Indica o status do valor da vazão máxima
+MinimaStatus;;Indica o status do valor da vazão mínima
+MediaStatus;;Indica o status do valor da vazão média
+MediaAnual;;Valor médio anual de vazão
+MediaAnualStatus;;Indica o status do valor da vazão média anual
+Vazao01...Vazao31;;Valor de vazão para cada dia do mês
+Vazao01Status...Vazao31Status;0 = Branco, 1 = Normal, 2 = Estimado, 3 = Duvidoso, 4 = Régua Seca, 5 = Rio Cortado, 6 = Rio Seco, 7 = Régua Coberta;Indica o status dos valores de vazão para os respectivos dias do mês
